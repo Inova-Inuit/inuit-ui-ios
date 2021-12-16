@@ -1,0 +1,11 @@
+framework module InuitUI {
+  umbrella header "InuitUI.h"
+
+  export *
+  module * { export * }
+}
+
+module InuitUI.Swift {
+    header "InuitUI-Swift.h"
+    requires objc
+}

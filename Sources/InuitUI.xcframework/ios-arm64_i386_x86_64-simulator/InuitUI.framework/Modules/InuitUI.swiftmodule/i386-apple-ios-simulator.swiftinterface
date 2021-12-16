@@ -1,0 +1,616 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
+// swift-module-flags: -target i386-apple-ios9.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name InuitUI
+import Foundation
+import ImageIO
+import InuitCore
+@_exported import InuitUI
+import MobileCoreServices
+import Swift
+import UIKit
+extension Bundle {
+  public func loadNamed<T>(_ name: Swift.String, owner: Any?, options: [UIKit.UINib.OptionsKey : Any]? = nil) -> T?
+}
+@objc @_inheritsConvenienceInitializers open class CollectionViewCellData : ObjectiveC.NSObject, InuitUI.CollectionViewCellDataProtocol {
+  @objc open var cellIdentifiers: [Swift.String]
+  @objc open var pressHandler: InuitUI.CollectionCellPressHandler?
+  @objc open var deletePressHandler: InuitUI.CollectionCellDeletePressHandler?
+  @objc open var swipeActions: [UIKit.UITableViewRowAction]?
+  @objc open var preventSelect: Swift.Bool
+  @objc open var canDelete: Swift.Bool
+  @objc open var canMove: Swift.Bool
+  @objc open var subContent: [InuitUI.CollectionViewCellDataProtocol]?
+  @objc open var expandOnSelect: Swift.Bool
+  convenience public init(cellIdentifiers: [Swift.String])
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension Data : InuitCore.ByteSizeProvidable {
+  public var byteSize: Swift.Int {
+    get
+  }
+}
+public class MemoryImageCache : InuitUI.ImageCaching {
+  public init(memoryLimit: Swift.Int = 1024 * 1024 * 10, maxSingleImageSize: Swift.Int? = nil)
+  public func image(for url: Foundation.URL, createAnimated: Swift.Bool) -> UIKit.UIImage?
+  public func cache(_ image: UIKit.UIImage, for url: Foundation.URL, expiration: Foundation.TimeInterval)
+  public func invalidateCache(for url: Foundation.URL)
+  public func cacheExpired(for url: Foundation.URL) -> Swift.Bool
+  public func expirationDate(for url: Foundation.URL) -> Foundation.Date?
+  public func clear()
+  public func clearExpired()
+  @objc deinit
+}
+public class ImageDownloader {
+  public enum Error : Swift.Error {
+    case malformedData
+    case alreadyDead
+    public static func == (a: InuitUI.ImageDownloader.Error, b: InuitUI.ImageDownloader.Error) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public typealias Result = () throws -> UIKit.UIImage
+  public typealias Completion = (() throws -> UIKit.UIImage) -> Swift.Void
+  public var completionHandler: InuitUI.ImageDownloader.Completion?
+  public var cacheExpirationInterval: Swift.Double
+  public var processor: ((UIKit.UIImage) -> UIKit.UIImage)?
+  public var createAnimated: Swift.Bool
+  public static var cacheDefault: InuitUI.ImageCaching {
+    get
+  }
+  public init(request: Foundation.URLRequest, session: Foundation.URLSession = Session.sharedInstance.urlSession, cache: InuitUI.ImageCaching = ImageDownloader.cacheDefault)
+  convenience public init(url: Foundation.URL, session: Foundation.URLSession = Session.sharedInstance.urlSession, cache: InuitUI.ImageCaching = ImageDownloader.cacheDefault)
+  convenience public init?(string: Swift.String, session: Foundation.URLSession = Session.sharedInstance.urlSession, cache: InuitUI.ImageCaching = ImageDownloader.cacheDefault)
+  public func start()
+  public func cancel()
+  @objc deinit
+}
+public struct ImageViewResizeParameters {
+  public init(maxSize: CoreGraphics.CGSize)
+}
+public protocol ImageViewDownloading : AnyObject {
+  typealias Result = () throws -> UIKit.UIImage
+  typealias Completion = (() throws -> UIKit.UIImage) -> Swift.Void
+  var resizeParameters: InuitUI.ImageViewResizeParameters? { get set }
+  var session: Foundation.URLSession { get set }
+  var cache: InuitUI.ImageCaching { get set }
+  var downloadEvent: InuitCore.Event<() throws -> UIKit.UIImage> { get }
+  var createAnimated: Swift.Bool { get set }
+  func download(with request: Foundation.URLRequest, completion: Self.Completion?)
+  func cancel()
+}
+open class CollectionControllerScrollPositionHandler {
+  public enum OverscrollLocation {
+    case top, left, right, bottom
+    public static func == (a: InuitUI.CollectionControllerScrollPositionHandler.OverscrollLocation, b: InuitUI.CollectionControllerScrollPositionHandler.OverscrollLocation) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  open var edgeRecognitionOffset: Swift.Int
+  open var topReleaseOffsetPercentage: Swift.Int
+  open var bottomReleaseOffsetPercentage: Swift.Int
+  open var atTheTop: (() -> Swift.Void)?
+  open var atTheBottom: (() -> Swift.Void)?
+  open var onOffsetReleaseTop: (() -> Swift.Void)?
+  open var onOffsetReleaseBottom: (() -> Swift.Void)?
+  open var onOverscrollTop: ((Swift.Int) -> Swift.Void)?
+  open var onOverscrollBottom: ((Swift.Int) -> Swift.Void)?
+  open var onScroll: (() -> Swift.Void)?
+  open var topRefreshControl: InuitUI.RefreshControlProtocol?
+  open var bottomRefreshControl: InuitUI.RefreshControlProtocol?
+  public init()
+  open func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
+  open func scrollViewWillEndDragging(_ scrollView: UIKit.UIScrollView, withVelocity velocity: CoreGraphics.CGPoint, targetContentOffset: Swift.UnsafeMutablePointer<CoreGraphics.CGPoint>)
+  open func topOverscrollEndDraggingRecognizerHelper(_ scrollView: UIKit.UIScrollView)
+  open func bottomOverscrollEndDraggingRecognizerHelper(_ scrollView: UIKit.UIScrollView)
+  open func topOverscrollRecognizerHelper(_ scrollView: UIKit.UIScrollView)
+  open func bottomOverscrollRecognizerHelper(_ scrollView: UIKit.UIScrollView)
+  open func edgeRecognizerHelper(_ scrollView: UIKit.UIScrollView)
+  open func scrollRecognizerHelper(_ scrollView: UIKit.UIScrollView)
+  open func overscrollPercentage(_ position: Swift.Int, length: Swift.Int) -> Swift.Int
+  open func currentContentOffset(_ scrollView: UIKit.UIScrollView, location: InuitUI.CollectionControllerScrollPositionHandler.OverscrollLocation) -> CoreGraphics.CGPoint
+  open func currentContentSize(_ scrollView: UIKit.UIScrollView) -> CoreGraphics.CGSize
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class ImageViewTransition {
+  @objc deinit
+}
+extension ImageViewTransition {
+  public class func immediate(_ context: InuitUI.ImageViewManager.TransitionContext)
+  public class func fade() -> InuitUI.ImageViewManager.Transition
+  public class func push(_ direction: InuitUI.MovingImageViewTransition.Direction) -> InuitUI.ImageViewManager.Transition
+  public class func moveIn(_ direction: InuitUI.MovingImageViewTransition.Direction) -> InuitUI.ImageViewManager.Transition
+  public class func reveal(_ direction: InuitUI.MovingImageViewTransition.Direction) -> InuitUI.ImageViewManager.Transition
+}
+public protocol ImageViewManaging : AnyObject {
+  typealias ImageData = (image: UIKit.UIImage?, processor: ((UIKit.UIImage) -> UIKit.UIImage))
+  var imageView: UIKit.UIImageView? { get set }
+  var loadedData: Self.ImageData { get set }
+  var errorData: Self.ImageData { get set }
+  var defaultData: Self.ImageData { get set }
+  var downloader: InuitUI.ImageViewDownloading { get }
+  func loadImage(from url: Foundation.URL)
+  func loadImage(from string: Swift.String)
+  func loadImage(with request: Foundation.URLRequest)
+  func cancel()
+  func showLoadedImage(transition: InuitUI.ImageViewManager.Transition?)
+  func showLoadedImage()
+  func showDefaultImage(transition: InuitUI.ImageViewManager.Transition?)
+  func showDefaultImage()
+  func showErrorImage(transition: InuitUI.ImageViewManager.Transition?)
+  func showErrorImage()
+}
+@objc @_inheritsConvenienceInitializers open class CollectionViewSectionData : ObjectiveC.NSObject, InuitUI.CollectionSectionDataProtocol {
+  @objc open var pressHandler: InuitUI.CollectionCellPressHandler?
+  @objc open var deletePressHandler: InuitUI.CollectionCellDeletePressHandler?
+  @objc open var swipeActions: [UIKit.UITableViewRowAction]?
+  @objc open var preventSelect: Swift.Bool
+  @objc open var canDelete: Swift.Bool
+  @objc open var canMove: Swift.Bool
+  @objc open var cellIdentifiers: [Swift.String]
+  open var cellIdentifier: Swift.String?
+  open var items: Swift.Array<InuitUI.CollectionViewCellDataProtocol>?
+  open var title: Swift.String?
+  open var sectionInsets: UIKit.UIEdgeInsets?
+  open var itemSpacing: CoreGraphics.CGSize?
+  convenience public init(cellIdentifier: Swift.String, title: Swift.String?)
+  @objc override dynamic public init()
+  @objc deinit
+}
+public class ImageViewManager : InuitUI.ImageViewManaging {
+  weak public var imageView: UIKit.UIImageView?
+  public var loadedData: (image: UIKit.UIImage?, processor: (UIKit.UIImage) -> UIKit.UIImage)
+  public var errorData: (image: UIKit.UIImage?, processor: (UIKit.UIImage) -> UIKit.UIImage)
+  public var defaultData: (image: UIKit.UIImage?, processor: (UIKit.UIImage) -> UIKit.UIImage) {
+    get
+    set
+  }
+  public var transition: (InuitUI.ImageViewManager.TransitionContext) -> ()
+  final public let downloader: InuitUI.ImageViewDownloading
+  public init(downloader: InuitUI.ImageViewDownloading = ImageViewDownloader())
+  public func loadImage(from url: Foundation.URL)
+  public func loadImage(from string: Swift.String)
+  public func loadImage(with request: Foundation.URLRequest)
+  public func cancel()
+  public func showLoadedImage()
+  public func showLoadedImage(transition: InuitUI.ImageViewManager.Transition? = nil)
+  public func showDefaultImage()
+  public func showDefaultImage(transition: InuitUI.ImageViewManager.Transition? = nil)
+  public func showErrorImage()
+  public func showErrorImage(transition: InuitUI.ImageViewManager.Transition? = nil)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class CollectionReusableView : UIKit.UICollectionReusableView, InuitUI.CollectionViewCellProtocol {
+  open func setData(_ data: InuitUI.CollectionViewCellDataProtocol)
+  open var stateHandler: InuitUI.CellStateHandling?
+  @objc @IBOutlet open var cellContentView: UIKit.UIView?
+  @objc @IBOutlet open var cellScrollView: UIKit.UIScrollView?
+  @objc @IBOutlet open var deleteButton: UIKit.UIButton?
+  @objc @IBOutlet open var cellHighlightView: UIKit.UIView?
+  @objc @IBOutlet open var titleLabel: UIKit.UILabel?
+  open func didEndDisplayingCell()
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension UIImage {
+  public class func image(fromData data: Foundation.Data, createAnimated: Swift.Bool = true) -> UIKit.UIImage?
+  public class func data(fromImage image: UIKit.UIImage) -> Foundation.Data?
+}
+@_inheritsConvenienceInitializers public class PushImageViewTransition : InuitUI.MovingImageViewTransition {
+  override public init(direction: InuitUI.MovingImageViewTransition.Direction)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class CollectionViewCell : UIKit.UICollectionViewCell, InuitUI.CollectionViewCellProtocol {
+  open var stateHandler: InuitUI.CellStateHandling?
+  @objc @IBOutlet open var cellContentView: UIKit.UIView?
+  @objc @IBOutlet open var cellScrollView: UIKit.UIScrollView?
+  @objc @IBOutlet open var deleteButton: UIKit.UIButton?
+  @objc @IBOutlet open var cellHighlightView: UIKit.UIView?
+  open func setData(_ data: InuitUI.CollectionViewCellDataProtocol)
+  open func didEndDisplayingCell()
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension ImageViewManager {
+  public typealias Transition = (InuitUI.ImageViewManager.TransitionContext) -> Swift.Void
+  public class TransitionContext {
+    unowned final public let imageView: UIKit.UIImageView
+    final public let fromImage: UIKit.UIImage?
+    final public let toImage: UIKit.UIImage?
+    public var cancellationHandler: (() -> Swift.Void)?
+    public init(imageView: UIKit.UIImageView, fromImage: UIKit.UIImage?, toImage: UIKit.UIImage?, completed: @escaping () -> Swift.Void)
+    public func completeTransition()
+    @objc deinit
+  }
+}
+public func | (left: InuitUI.CellState, right: InuitUI.CellState) -> InuitUI.CellState
+public func & (left: InuitUI.CellState, right: InuitUI.CellState) -> InuitUI.CellState
+public struct CellState : Swift.OptionSet {
+  public typealias RawValue = Swift.UInt
+  public init(_ value: Swift.UInt)
+  public init(rawValue value: Swift.UInt)
+  public init(nilLiteral: ())
+  public static var allZeros: InuitUI.CellState {
+    get
+  }
+  public static func fromMask(_ raw: Swift.UInt) -> InuitUI.CellState
+  public var rawValue: Swift.UInt {
+    get
+  }
+  public static var Default: InuitUI.CellState {
+    get
+  }
+  public static var Edit: InuitUI.CellState {
+    get
+  }
+  public static var Delete: InuitUI.CellState {
+    get
+  }
+  public static var Highlighted: InuitUI.CellState {
+    get
+  }
+  public static var Selected: InuitUI.CellState {
+    get
+  }
+  public static var Expanded: InuitUI.CellState {
+    get
+  }
+  public typealias ArrayLiteralElement = InuitUI.CellState
+  public typealias Element = InuitUI.CellState
+}
+public protocol CellStateHandling {
+  init(cell: InuitUI.CollectionViewCellProtocol)
+  func prepareCellForState(_ state: InuitUI.CellState, animated: Swift.Bool, data: InuitUI.CollectionViewCellDataProtocol)
+  func prepareCellForReuse()
+}
+public protocol CollectionViewCellProtocol : AnyObject {
+  func setData(_: InuitUI.CollectionViewCellDataProtocol)
+  var stateHandler: InuitUI.CellStateHandling? { get set }
+  var cellScrollView: UIKit.UIScrollView? { get set }
+  var cellContentView: UIKit.UIView? { get set }
+  var deleteButton: UIKit.UIButton? { get set }
+  var cellHighlightView: UIKit.UIView? { get set }
+  func didEndDisplayingCell()
+}
+@objc @_inheritsConvenienceInitializers open class TableViewCell : UIKit.UITableViewCell, InuitUI.CollectionViewCellProtocol {
+  open var stateHandler: InuitUI.CellStateHandling?
+  @objc @IBOutlet open var cellContentView: UIKit.UIView?
+  @objc @IBOutlet open var cellScrollView: UIKit.UIScrollView?
+  @objc @IBOutlet open var deleteButton: UIKit.UIButton?
+  @objc @IBOutlet open var cellHighlightView: UIKit.UIView?
+  @objc override dynamic open func awakeFromNib()
+  @objc override dynamic open func setEditing(_ editing: Swift.Bool, animated: Swift.Bool)
+  open func setData(_ data: InuitUI.CollectionViewCellDataProtocol)
+  open func didEndDisplayingCell()
+  @available(iOS 3.0, *)
+  @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public class FadeImageViewTransition {
+  public var duration: Swift.Double
+  public init()
+  public func transition(with context: InuitUI.ImageViewManager.TransitionContext)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class RevealImageViewTransition : InuitUI.MovingImageViewTransition {
+  override public init(direction: InuitUI.MovingImageViewTransition.Direction)
+  @objc deinit
+}
+public protocol ImageCaching {
+  func image(for url: Foundation.URL, createAnimated: Swift.Bool) -> UIKit.UIImage?
+  func cache(_ image: UIKit.UIImage, for url: Foundation.URL, expiration: Foundation.TimeInterval)
+  func invalidateCache(for url: Foundation.URL)
+  func cacheExpired(for url: Foundation.URL) -> Swift.Bool
+  func expirationDate(for url: Foundation.URL) -> Foundation.Date?
+  func clear()
+  func clearExpired()
+}
+@objc open class ImageView : UIKit.UIImageView {
+  public var manager: InuitUI.ImageViewManaging {
+    get
+    set
+  }
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc override dynamic open func awakeFromNib()
+  @objc override dynamic public init(image: UIKit.UIImage?)
+  @available(iOS 3.0, *)
+  @objc override dynamic public init(image: UIKit.UIImage?, highlightedImage: UIKit.UIImage?)
+  @objc deinit
+}
+public protocol CollectionSectionDataProtocol : InuitUI.CollectionViewCellDataProtocol {
+  var cellIdentifier: Swift.String? { get set }
+  var items: Swift.Array<InuitUI.CollectionViewCellDataProtocol>? { get set }
+  var title: Swift.String? { get set }
+  var sectionInsets: UIKit.UIEdgeInsets? { get set }
+  var itemSpacing: CoreGraphics.CGSize? { get set }
+}
+public typealias CollectionCellPressHandler = () -> ()
+public typealias CollectionCellDeletePressHandler = () -> ()
+@objc public protocol CollectionViewCellDataProtocol {
+  @objc var cellIdentifiers: Swift.Array<Swift.String> { get set }
+  @objc var pressHandler: InuitUI.CollectionCellPressHandler? { get set }
+  @objc var deletePressHandler: InuitUI.CollectionCellDeletePressHandler? { get set }
+  @objc var swipeActions: [UIKit.UITableViewRowAction]? { get set }
+  @objc var preventSelect: Swift.Bool { get set }
+  @objc optional var canDelete: Swift.Bool { get set }
+  @objc var canMove: Swift.Bool { get set }
+  @objc optional var subContent: [InuitUI.CollectionViewCellDataProtocol]? { get set }
+  @objc optional var expandOnSelect: Swift.Bool { get set }
+}
+public typealias CellMetaDataGetSize = (InuitUI.CollectionViewCellDataProtocol, InuitUI.CollectionViewCellProtocol?, UIKit.UIView) -> CoreGraphics.CGSize
+public typealias CellMetaDataHandleCell = (InuitUI.CollectionViewCellDataProtocol, InuitUI.CollectionViewCellProtocol) -> ()
+open class CellMetaData {
+  public init(cellIdentifier: Swift.String, nibName: Swift.String, getSize: @escaping InuitUI.CellMetaDataGetSize)
+  public var cellIdentifier: Swift.String
+  public var nibName: Swift.String
+  public var getSize: InuitUI.CellMetaDataGetSize
+  public var estimatedSize: CoreGraphics.CGSize?
+  public var getEstimatedSize: InuitUI.CellMetaDataGetSize?
+  public var getStateHandler: ((InuitUI.CollectionViewCellProtocol) -> InuitUI.CellStateHandling)?
+  public var allowsPersistedSelection: Swift.Bool
+  public var prepareCell: InuitUI.CellMetaDataHandleCell?
+  @objc deinit
+}
+public protocol CollectionControllerModuleProtocol : AnyObject {
+  func willReloadData()
+  func didReloadData()
+  func didDequeueCell(_ cell: InuitUI.CollectionViewCellProtocol, withData data: InuitUI.CollectionViewCellDataProtocol)
+}
+@_inheritsConvenienceInitializers public class MoveInImageViewTransition : InuitUI.MovingImageViewTransition {
+  override public init(direction: InuitUI.MovingImageViewTransition.Direction)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers open class ScrollRefreshControl : UIKit.UIView, InuitUI.RefreshControlProtocol {
+  open var topOffset: CoreGraphics.CGFloat
+  convenience public init(closeDelay: Foundation.TimeInterval? = nil)
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc override dynamic open func didMoveToSuperview()
+  @objc override dynamic open func layoutSubviews()
+  public func onOverscrollPercentage(_ percentage: Swift.Int)
+  public func beginRefreshing()
+  public func endRefreshing(_ completed: (() -> Swift.Void)? = nil)
+  @objc deinit
+}
+public class ImageCacheLocator {
+  public static let shared: InuitUI.ImageCacheLocator
+  public init(cache: InuitUI.ImageCaching)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class MovingImageViewTransition : InuitUI.ImageViewTransition {
+  public enum Direction {
+    case left, right, up, down
+    public static func == (a: InuitUI.MovingImageViewTransition.Direction, b: InuitUI.MovingImageViewTransition.Direction) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public init(direction: InuitUI.MovingImageViewTransition.Direction)
+  public func transition(with context: InuitUI.ImageViewManager.TransitionContext)
+  @objc deinit
+}
+public enum CollectionControllerSection {
+  case main, header, footer
+  public static func == (a: InuitUI.CollectionControllerSection, b: InuitUI.CollectionControllerSection) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum ActivityCellPosition {
+  case top, bottom, full, fullContent, afterSection
+  public static func == (a: InuitUI.ActivityCellPosition, b: InuitUI.ActivityCellPosition) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@objc public protocol CollectionControllerDelegate {
+  @objc optional func collectionControllerShouldSelectItem(_ data: InuitUI.CollectionViewCellDataProtocol, controller: InuitUI.CollectionController) -> Swift.Bool
+  @objc optional func collectionControllerShouldDeselectItem(_ data: InuitUI.CollectionViewCellDataProtocol, controller: InuitUI.CollectionController) -> Swift.Bool
+  @objc optional func collectionControllerWillSelectItem(_ data: InuitUI.CollectionViewCellDataProtocol, controller: InuitUI.CollectionController)
+  @objc optional func collectionControllerDidSelectItem(_ data: InuitUI.CollectionViewCellDataProtocol, controller: InuitUI.CollectionController)
+  @objc optional func collectionControllerDidDeselectItem(_ data: InuitUI.CollectionViewCellDataProtocol, controller: InuitUI.CollectionController)
+  @objc optional func collectionControllerDidScroll(_ contentOffset: CoreGraphics.CGPoint, controller: InuitUI.CollectionController)
+  @objc optional func collectionControllerWillEndDragging(_ scrollView: UIKit.UIScrollView, withVelocity velocity: CoreGraphics.CGPoint, targetContentOffset: Swift.UnsafeMutablePointer<CoreGraphics.CGPoint>)
+  @objc optional func collectionControllerDidEndDragging(_ scrollView: UIKit.UIScrollView, willDecelerate decelerate: Swift.Bool)
+  @objc optional func collectionControllerDidEndScrollAnimation(_ scrollView: UIKit.UIScrollView)
+  @objc optional func collectionControllerDidEndDecelerating(_ scrollView: UIKit.UIScrollView)
+  @objc optional func collectionControllerDidScrollToTop(_ scrollView: UIKit.UIScrollView)
+}
+@objc @_inheritsConvenienceInitializers open class CollectionController : ObjectiveC.NSObject, UIKit.UICollectionViewDelegate, UIKit.UICollectionViewDataSource, UIKit.UICollectionViewDelegateFlowLayout {
+  weak open var delegate: InuitUI.CollectionControllerDelegate?
+  open var scrollPositionHandler: InuitUI.CollectionControllerScrollPositionHandler?
+  @objc deinit
+  open var sections: Swift.Array<InuitUI.CollectionSectionDataProtocol>?
+  open var deleteModeEnabled: Swift.Bool {
+    get
+    set
+  }
+  open var allowsSelectionDuringDeleteMode: Swift.Bool
+  open var deleteMode: Swift.Bool {
+    get
+    set
+  }
+  open var persistCellHighlightOnSelect: Swift.Bool {
+    get
+    set
+  }
+  open var persistMultipleCellsOnSelect: Swift.Bool {
+    get
+    set
+  }
+  @objc override dynamic public init()
+  convenience public init(collectionView: UIKit.UICollectionView)
+  @objc open func deleteModeLongPress(_ recognizer: UIKit.UILongPressGestureRecognizer)
+  @objc open func backgroundTap(_ recognizer: UIKit.UITapGestureRecognizer)
+  public var isEmpty: Swift.Bool {
+    get
+  }
+  public func reloadContent(_ clearSelected: Swift.Bool = true)
+  public func updateContent(_ clearSelected: Swift.Bool = true)
+  public func addModule(_ module: InuitUI.CollectionControllerModuleProtocol)
+  public func removeModule(_ module: InuitUI.CollectionControllerModuleProtocol)
+  public func addMappingObject(_ mappingObject: InuitUI.CellMetaData, section: InuitUI.CollectionControllerSection = .main)
+  public func removeMappingObjectForIdentifier(_ identifier: Swift.String, section: InuitUI.CollectionControllerSection = .main)
+  public func addInfoMappingObject(_ mappingObject: InuitUI.CellMetaData, data: InuitUI.CollectionViewCellDataProtocol)
+  public func addActivityMappingObject(_ mappingObject: InuitUI.CellMetaData, data: InuitUI.CollectionViewCellDataProtocol)
+  public func showActivityCell()
+  public func showActivityCell(_ section: Swift.Int, cellPosition: InuitUI.ActivityCellPosition = ActivityCellPosition.full)
+  public func showInfoCell()
+  public func showInfoCell(_ section: Swift.Int, cellPosition: InuitUI.ActivityCellPosition = ActivityCellPosition.full)
+  open func reloadCellsForItems(_ items: [InuitUI.CollectionViewCellDataProtocol])
+  public func reload(sections: [InuitUI.CollectionSectionDataProtocol])
+  open func selectItems(_ items: [InuitUI.CollectionViewCellDataProtocol], performAction: Swift.Bool = false, performPressHandler: Swift.Bool = true)
+  open func deselectItems(_ items: [InuitUI.CollectionViewCellDataProtocol])
+  open func deselectAll()
+  open func expandOrCollapseItem(_ item: InuitUI.CollectionViewCellDataProtocol)
+  open func collapseItem(_ item: InuitUI.CollectionViewCellDataProtocol)
+  open func scrollToItem(for cellData: InuitUI.CollectionViewCellDataProtocol, at position: UIKit.UICollectionView.ScrollPosition = [.centeredHorizontally, .centeredVertically], animated: Swift.Bool = true)
+  open func cellMetaDataForIndexPath(_ indexPath: Foundation.IndexPath) -> (metaData: InuitUI.CellMetaData, cellData: InuitUI.CollectionViewCellDataProtocol)
+  open func cellDataForIndexPath(_ indexPath: Foundation.IndexPath) -> InuitUI.CollectionViewCellDataProtocol
+  @objc open func numberOfSections(in collectionView: UIKit.UICollectionView) -> Swift.Int
+  @objc open func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @objc open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @objc open func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, sizeForItemAt indexPath: Foundation.IndexPath) -> CoreGraphics.CGSize
+  @objc open func collectionView(_ collectionView: UIKit.UICollectionView, viewForSupplementaryElementOfKind kind: Swift.String, at indexPath: Foundation.IndexPath) -> UIKit.UICollectionReusableView
+  @objc open func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, referenceSizeForHeaderInSection section: Swift.Int) -> CoreGraphics.CGSize
+  @objc open func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, referenceSizeForFooterInSection section: Swift.Int) -> CoreGraphics.CGSize
+  @objc open func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, insetForSectionAt section: Swift.Int) -> UIKit.UIEdgeInsets
+  @objc open func collectionView(_ collectionView: UIKit.UICollectionView, shouldHighlightItemAt indexPath: Foundation.IndexPath) -> Swift.Bool
+  @objc open func collectionView(_ collectionView: UIKit.UICollectionView, shouldSelectItemAt indexPath: Foundation.IndexPath) -> Swift.Bool
+  @objc open func collectionView(_ collectionView: UIKit.UICollectionView, shouldDeselectItemAt indexPath: Foundation.IndexPath) -> Swift.Bool
+  @objc open func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+  @objc open func collectionView(_ collectionView: UIKit.UICollectionView, didDeselectItemAt indexPath: Foundation.IndexPath)
+  @objc open func collectionView(_ collectionView: UIKit.UICollectionView, didEndDisplaying cell: UIKit.UICollectionViewCell, forItemAt indexPath: Foundation.IndexPath)
+  @objc open func collectionView(_ collectionView: UIKit.UICollectionView, didHighlightItemAt indexPath: Foundation.IndexPath)
+  @objc open func collectionView(_ collectionView: UIKit.UICollectionView, didUnhighlightItemAt indexPath: Foundation.IndexPath)
+  open func indexPathForCellData(_ data: InuitUI.CollectionViewCellDataProtocol) -> Foundation.IndexPath?
+  @objc open func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
+  @objc open func scrollViewWillEndDragging(_ scrollView: UIKit.UIScrollView, withVelocity velocity: CoreGraphics.CGPoint, targetContentOffset: Swift.UnsafeMutablePointer<CoreGraphics.CGPoint>)
+  @objc open func scrollViewDidEndDragging(_ scrollView: UIKit.UIScrollView, willDecelerate decelerate: Swift.Bool)
+  @objc open func scrollViewDidEndScrollingAnimation(_ scrollView: UIKit.UIScrollView)
+  @objc open func scrollViewDidEndDecelerating(_ scrollView: UIKit.UIScrollView)
+  @objc public func scrollViewDidScrollToTop(_ scrollView: UIKit.UIScrollView)
+  @objc open func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Swift.Int) -> CoreGraphics.CGFloat
+  @objc open func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, minimumLineSpacingForSectionAt section: Swift.Int) -> CoreGraphics.CGFloat
+}
+public protocol RefreshControlProtocol : AnyObject {
+  func beginRefreshing()
+  func endRefreshing(_ completed: (() -> Swift.Void)?)
+  func onOverscrollPercentage(_ percentage: Swift.Int)
+}
+@_hasMissingDesignatedInitializers public class ImageViewManagerProvider {
+  public static let `default`: InuitUI.ImageViewManagerProvider
+  public var cache: () -> InuitUI.ImageCaching
+  public var downloader: () -> InuitUI.ImageViewDownloading {
+    get
+    set
+  }
+  public var manager: () -> InuitUI.ImageViewManaging {
+    get
+    set
+  }
+  @objc deinit
+}
+@objc public protocol TableControllerDelegate {
+  @objc optional func tableController(_ controller: InuitUI.TableController, shouldSelectRowForData data: InuitUI.CollectionViewCellDataProtocol) -> Swift.Bool
+  @objc optional func tableController(_ controller: InuitUI.TableController, shouldDeselectRowForData data: InuitUI.CollectionViewCellDataProtocol) -> Swift.Bool
+  @objc optional func tableControllerDidScroll(_ contentOffset: CoreGraphics.CGPoint, controller: InuitUI.TableController)
+  @objc optional func tableControllerWillEndDragging(_ scrollView: UIKit.UIScrollView, withVelocity velocity: CoreGraphics.CGPoint, targetContentOffset: Swift.UnsafeMutablePointer<CoreGraphics.CGPoint>)
+}
+@objc open class TableController : ObjectiveC.NSObject, UIKit.UITableViewDataSource, UIKit.UITableViewDelegate {
+  public typealias TableControllerSection = InuitUI.CollectionControllerSection
+  open var scrollPositionHandler: InuitUI.CollectionControllerScrollPositionHandler?
+  open var sections: [InuitUI.CollectionSectionDataProtocol]?
+  open var editMode: Swift.Bool {
+    get
+    set
+  }
+  weak open var delegate: InuitUI.TableControllerDelegate?
+  public init(tableView: UIKit.UITableView)
+  @objc deinit
+  open func addMappingObject(_ mappingObject: InuitUI.CellMetaData)
+  open func removeMappingObjectForIdentifier(_ identifier: Swift.String)
+  open func updateContent()
+  open func reloadContent()
+  open func selectRowForData(_ data: InuitUI.CollectionViewCellDataProtocol)
+  open func selectRowForDataArray(_ data: [InuitUI.CollectionViewCellDataProtocol])
+  open func deselectAllRows()
+  open func selectedData() -> [InuitUI.CollectionViewCellDataProtocol]?
+  open func notSelectedDataForSection(_ targetSectionData: InuitUI.CollectionSectionDataProtocol) -> [InuitUI.CollectionViewCellDataProtocol]
+  open func dataForIndexPath(_ indexPath: Foundation.IndexPath) -> (metaData: InuitUI.CellMetaData, cellData: InuitUI.CollectionViewCellDataProtocol)
+  open func append(items: [InuitUI.CollectionViewCellDataProtocol], inSection section: Swift.Int, withAnimation animation: UIKit.UITableView.RowAnimation)
+  open func removeDataForIndexPath(_ indexPath: Foundation.IndexPath) -> Swift.Bool
+  public func deleteRow(at: Foundation.IndexPath, with animation: UIKit.UITableView.RowAnimation)
+  public func deleteRows(at: [Foundation.IndexPath], with animation: UIKit.UITableView.RowAnimation)
+  public func showActivityCell()
+  public func showActivityCell(_ section: Swift.Int, animation: UIKit.UITableView.RowAnimation, cellPosition: InuitUI.ActivityCellPosition = ActivityCellPosition.full)
+  public func addActivityMappingObject(_ mappingObject: InuitUI.CellMetaData, data: InuitUI.CollectionViewCellDataProtocol)
+  public func showInfoCell()
+  public func showInfoCell(_ section: Swift.Int, animation: UIKit.UITableView.RowAnimation, cellPosition: InuitUI.ActivityCellPosition = ActivityCellPosition.full)
+  public func addInfoMappingObject(_ mappingObject: InuitUI.CellMetaData, data: InuitUI.CollectionViewCellDataProtocol)
+  public func removeAllActivityCells(animation: UIKit.UITableView.RowAnimation = .none, onComplete: (() -> Swift.Void)?)
+  public func reloadCells(for items: [InuitUI.CollectionViewCellDataProtocol], with animation: UIKit.UITableView.RowAnimation = .fade)
+  public func reload(sections: [InuitUI.CollectionSectionDataProtocol], with animation: UIKit.UITableView.RowAnimation = .fade)
+  public func scrollToCell(for item: InuitUI.CollectionViewCellDataProtocol, at position: UIKit.UITableView.ScrollPosition, animated: Swift.Bool)
+  @objc open func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @objc open func numberOfSections(in tableView: UIKit.UITableView) -> Swift.Int
+  @objc open func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @objc open func tableView(_ tableView: UIKit.UITableView, heightForRowAt indexPath: Foundation.IndexPath) -> CoreGraphics.CGFloat
+  @objc open func tableView(_ tableView: UIKit.UITableView, estimatedHeightForRowAt indexPath: Foundation.IndexPath) -> CoreGraphics.CGFloat
+  @objc open func tableView(_ tableView: UIKit.UITableView, shouldHighlightRowAt indexPath: Foundation.IndexPath) -> Swift.Bool
+  @objc open func tableView(_ tableView: UIKit.UITableView, didHighlightRowAt indexPath: Foundation.IndexPath)
+  @objc open func tableView(_ tableView: UIKit.UITableView, didUnhighlightRowAt indexPath: Foundation.IndexPath)
+  @objc open func tableView(_ tableView: UIKit.UITableView, willSelectRowAt indexPath: Foundation.IndexPath) -> Foundation.IndexPath?
+  @objc open func tableView(_ tableView: UIKit.UITableView, willDeselectRowAt indexPath: Foundation.IndexPath) -> Foundation.IndexPath?
+  @objc open func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+  @objc open func tableView(_ tableView: UIKit.UITableView, didDeselectRowAt indexPath: Foundation.IndexPath)
+  @objc open func tableView(_ tableView: UIKit.UITableView, canMoveRowAt indexPath: Foundation.IndexPath) -> Swift.Bool
+  @objc open func tableView(_ tableView: UIKit.UITableView, moveRowAt sourceIndexPath: Foundation.IndexPath, to destinationIndexPath: Foundation.IndexPath)
+  @objc open func tableView(_ tableView: UIKit.UITableView, targetIndexPathForMoveFromRowAt sourceIndexPath: Foundation.IndexPath, toProposedIndexPath proposedDestinationIndexPath: Foundation.IndexPath) -> Foundation.IndexPath
+  @objc open func tableView(_ tableView: UIKit.UITableView, canEditRowAt indexPath: Foundation.IndexPath) -> Swift.Bool
+  @objc open func tableView(_ tableView: UIKit.UITableView, editingStyleForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell.EditingStyle
+  @objc open func tableView(_ tableView: UIKit.UITableView, shouldIndentWhileEditingRowAt indexPath: Foundation.IndexPath) -> Swift.Bool
+  @objc open func tableView(_ tableView: UIKit.UITableView, editActionsForRowAt indexPath: Foundation.IndexPath) -> [UIKit.UITableViewRowAction]?
+  @objc public func tableView(_ tableView: UIKit.UITableView, titleForHeaderInSection section: Swift.Int) -> Swift.String?
+  @objc open func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
+  @objc open func scrollViewWillEndDragging(_ scrollView: UIKit.UIScrollView, withVelocity velocity: CoreGraphics.CGPoint, targetContentOffset: Swift.UnsafeMutablePointer<CoreGraphics.CGPoint>)
+  @objc override dynamic public init()
+}
+public class ImageViewDownloader : InuitUI.ImageViewDownloading {
+  public typealias Completion = (() throws -> UIKit.UIImage) -> Swift.Void
+  public static var cacheDefault: InuitUI.ImageCaching {
+    get
+  }
+  public var session: Foundation.URLSession
+  public var cache: InuitUI.ImageCaching
+  final public let downloadEvent: InuitCore.Event<() throws -> UIKit.UIImage>
+  public var resizeParameters: InuitUI.ImageViewResizeParameters? {
+    get
+    set
+  }
+  public var createAnimated: Swift.Bool
+  public init(session: Foundation.URLSession = Session.sharedInstance.urlSession, cache: InuitUI.ImageCaching = ImageViewDownloader.cacheDefault)
+  public func download(with request: Foundation.URLRequest, completion: InuitUI.ImageViewDownloader.Completion?)
+  public func cancel()
+  @objc deinit
+}
+extension InuitUI.ImageDownloader.Error : Swift.Equatable {}
+extension InuitUI.ImageDownloader.Error : Swift.Hashable {}
+extension InuitUI.CollectionControllerScrollPositionHandler.OverscrollLocation : Swift.Equatable {}
+extension InuitUI.CollectionControllerScrollPositionHandler.OverscrollLocation : Swift.Hashable {}
+extension InuitUI.MovingImageViewTransition.Direction : Swift.Equatable {}
+extension InuitUI.MovingImageViewTransition.Direction : Swift.Hashable {}
+extension InuitUI.CollectionControllerSection : Swift.Equatable {}
+extension InuitUI.CollectionControllerSection : Swift.Hashable {}
+extension InuitUI.ActivityCellPosition : Swift.Equatable {}
+extension InuitUI.ActivityCellPosition : Swift.Hashable {}
