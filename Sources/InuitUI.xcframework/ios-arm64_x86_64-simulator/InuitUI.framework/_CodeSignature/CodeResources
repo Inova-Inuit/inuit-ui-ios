@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		zn+D2nggMGHuClaXKZJ4izRa1no=
+		kPaDzm0EYoZbg0ebmfFXnzkQvrs=
 		</data>
 		<key>Modules/InuitUI.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		sVAGTOapcWvG+MAT6k8Em17A5Rg=
+		i2EdK+XjPhRZGarFXzLwjKpdbtY=
 		</data>
 		<key>Modules/InuitUI.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		b7y7efykvYB+vlY51HttYM8ODYc=
+		t+14h90TAnzVCEe11bw32vitn/E=
 		</data>
 		<key>Modules/InuitUI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -97,22 +97,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sVAGTOapcWvG+MAT6k8Em17A5Rg=
+			i2EdK+XjPhRZGarFXzLwjKpdbtY=
 			</data>
 			<key>hash2</key>
 			<data>
-			8vDDubk1NX+rzdbTR4dT+nYuD8RQ7O2HjNb42+efl/0=
+			mGk+B2kwCHvwyuclzIXUwl8o5Q8gzedPZPkMDeNZ0UA=
 			</data>
 		</dict>
 		<key>Modules/InuitUI.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			b7y7efykvYB+vlY51HttYM8ODYc=
+			t+14h90TAnzVCEe11bw32vitn/E=
 			</data>
 			<key>hash2</key>
 			<data>
-			qy/6rr+yc8W7ENCpHkY+3IvOcHlSlTiqChHiEdMy8hU=
+			1c7eJgAy3mu+DGsdDIktkLpHrBxu8DjzZWyUSGE9fLc=
 			</data>
 		</dict>
 		<key>Modules/InuitUI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
