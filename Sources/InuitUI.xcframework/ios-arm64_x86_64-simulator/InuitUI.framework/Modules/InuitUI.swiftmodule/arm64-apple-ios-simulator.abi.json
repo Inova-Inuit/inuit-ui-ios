@@ -27227,504 +27227,504 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionViewCellData.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionViewCellData.swift",
       "kind": "Array",
       "offset": 290,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionViewCellData.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionViewCellData.swift",
       "kind": "BooleanLiteral",
       "offset": 515,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionViewCellData.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionViewCellData.swift",
       "kind": "BooleanLiteral",
       "offset": 553,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionViewCellData.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionViewCellData.swift",
       "kind": "BooleanLiteral",
       "offset": 586,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionViewCellData.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionViewCellData.swift",
       "kind": "BooleanLiteral",
       "offset": 692,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/ImageDownloader\/Cache\/MemoryImageCache.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/ImageDownloader\/Cache\/MemoryImageCache.swift",
       "kind": "IntegerLiteral",
       "offset": 420,
       "length": 4,
       "value": "1024"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/ImageDownloader\/Cache\/MemoryImageCache.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/ImageDownloader\/Cache\/MemoryImageCache.swift",
       "kind": "IntegerLiteral",
       "offset": 427,
       "length": 4,
       "value": "1024"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/ImageDownloader\/Cache\/MemoryImageCache.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/ImageDownloader\/Cache\/MemoryImageCache.swift",
       "kind": "IntegerLiteral",
       "offset": 434,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/ImageDownloader\/ImageDownloader.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/ImageDownloader\/ImageDownloader.swift",
       "kind": "BooleanLiteral",
       "offset": 1178,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/ImageDownloader\/ImageDownloader.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/ImageDownloader\/ImageDownloader.swift",
       "kind": "BooleanLiteral",
       "offset": 1282,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionControllerScrollPositionHandler.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionControllerScrollPositionHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 415,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionControllerScrollPositionHandler.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionControllerScrollPositionHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 464,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionControllerScrollPositionHandler.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionControllerScrollPositionHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 517,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionControllerScrollPositionHandler.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionControllerScrollPositionHandler.swift",
       "kind": "BooleanLiteral",
       "offset": 1030,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionControllerScrollPositionHandler.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionControllerScrollPositionHandler.swift",
       "kind": "BooleanLiteral",
       "offset": 1072,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionControllerScrollPositionHandler.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionControllerScrollPositionHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 1136,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionControllerScrollPositionHandler.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionControllerScrollPositionHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 1199,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionControllerScrollPositionHandler.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionControllerScrollPositionHandler.swift",
       "kind": "FloatLiteral",
       "offset": 1257,
       "length": 4,
       "value": "0.45"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/ImageView\/Transitions\/ImageViewTransition.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/ImageView\/Transitions\/ImageViewTransition.swift",
       "kind": "FloatLiteral",
       "offset": 240,
       "length": 3,
       "value": "0.5"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionViewSectionData.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionViewSectionData.swift",
       "kind": "BooleanLiteral",
       "offset": 470,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionViewSectionData.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionViewSectionData.swift",
       "kind": "BooleanLiteral",
       "offset": 508,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionViewSectionData.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionViewSectionData.swift",
       "kind": "BooleanLiteral",
       "offset": 541,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionViewSectionData.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionViewSectionData.swift",
       "kind": "Array",
       "offset": 598,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Extensions\/Image\/UIImage+GIF.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Extensions\/Image\/UIImage+GIF.swift",
       "kind": "BooleanLiteral",
       "offset": 416,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Extensions\/Image\/UIImage+GIF.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Extensions\/Image\/UIImage+GIF.swift",
       "kind": "IntegerLiteral",
       "offset": 1362,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/Helpers\/CellSelectionHelper.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/Helpers\/CellSelectionHelper.swift",
       "kind": "BooleanLiteral",
       "offset": 253,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/Helpers\/CellSelectionHelper.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/Helpers\/CellSelectionHelper.swift",
       "kind": "BooleanLiteral",
       "offset": 304,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CellStateHandling.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CellStateHandling.swift",
       "kind": "IntegerLiteral",
       "offset": 514,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/ImageView\/Transitions\/FadeImageViewTransition.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/ImageView\/Transitions\/FadeImageViewTransition.swift",
       "kind": "FloatLiteral",
       "offset": 255,
       "length": 3,
       "value": "0.3"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/ImageView\/ImageView.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/ImageView\/ImageView.swift",
       "kind": "StringLiteral",
       "offset": 163,
       "length": 9,
       "value": "\"InuitUI.ImageView\""
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/ImageView\/ImageView.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/ImageView\/ImageView.swift",
       "kind": "StringLiteral",
       "offset": 163,
       "length": 9,
       "value": "\"InuitUI.ImageView\""
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CellMetaData.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CellMetaData.swift",
       "kind": "BooleanLiteral",
       "offset": 1498,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/Helpers\/ScrollRefreshControl.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/Helpers\/ScrollRefreshControl.swift",
       "kind": "IntegerLiteral",
       "offset": 263,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/Helpers\/ScrollRefreshControl.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/Helpers\/ScrollRefreshControl.swift",
       "kind": "FloatLiteral",
       "offset": 327,
       "length": 3,
       "value": "0.5"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/Helpers\/ScrollRefreshControl.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/Helpers\/ScrollRefreshControl.swift",
       "kind": "BooleanLiteral",
       "offset": 575,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/Helpers\/ScrollRefreshControl.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/Helpers\/ScrollRefreshControl.swift",
       "kind": "IntegerLiteral",
       "offset": 626,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/Helpers\/ScrollRefreshControl.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/Helpers\/ScrollRefreshControl.swift",
       "kind": "IntegerLiteral",
       "offset": 677,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/Helpers\/ScrollRefreshControl.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/Helpers\/ScrollRefreshControl.swift",
       "kind": "IntegerLiteral",
       "offset": 921,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/Helpers\/ScrollRefreshControl.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/Helpers\/ScrollRefreshControl.swift",
       "kind": "BooleanLiteral",
       "offset": 5138,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/ImageDownloader\/Cache\/ImageCacheLocator.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/ImageDownloader\/Cache\/ImageCacheLocator.swift",
       "kind": "IntegerLiteral",
       "offset": 331,
       "length": 4,
       "value": "1024"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/ImageDownloader\/Cache\/ImageCacheLocator.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/ImageDownloader\/Cache\/ImageCacheLocator.swift",
       "kind": "IntegerLiteral",
       "offset": 338,
       "length": 4,
       "value": "1024"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/ImageDownloader\/Cache\/ImageCacheLocator.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/ImageDownloader\/Cache\/ImageCacheLocator.swift",
       "kind": "IntegerLiteral",
       "offset": 345,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/ImageView\/Transitions\/MovingImageViewTransition.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/ImageView\/Transitions\/MovingImageViewTransition.swift",
       "kind": "BooleanLiteral",
       "offset": 709,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/ImageView\/Transitions\/MovingImageViewTransition.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/ImageView\/Transitions\/MovingImageViewTransition.swift",
       "kind": "StringLiteral",
       "offset": 186,
       "length": 25,
       "value": "\"InuitUI.MovingImageViewTransition\""
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionController.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionController.swift",
       "kind": "StringLiteral",
       "offset": 210,
       "length": 45,
       "value": "\"com.astro.collectionController.specialCell.\""
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionController.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionController.swift",
       "kind": "StringLiteral",
       "offset": 280,
       "length": 21,
       "value": "\"ActivityCellDataKey\""
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionController.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionController.swift",
       "kind": "StringLiteral",
       "offset": 320,
       "length": 19,
       "value": "\"NoDataCellDataKey\""
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionController.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionController.swift",
       "kind": "IntegerLiteral",
       "offset": 366,
       "length": 3,
       "value": "666"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionController.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionController.swift",
       "kind": "BooleanLiteral",
       "offset": 3218,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionController.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionController.swift",
       "kind": "BooleanLiteral",
       "offset": 3525,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionController.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionController.swift",
       "kind": "BooleanLiteral",
       "offset": 4098,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionController.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionController.swift",
       "kind": "BooleanLiteral",
       "offset": 4162,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionController.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionController.swift",
       "kind": "BooleanLiteral",
       "offset": 3568,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionController.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionController.swift",
       "kind": "Array",
       "offset": 5867,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionController.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionController.swift",
       "kind": "BooleanLiteral",
       "offset": 5913,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionController.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionController.swift",
       "kind": "BooleanLiteral",
       "offset": 5955,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionController.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionController.swift",
       "kind": "BooleanLiteral",
       "offset": 6002,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionController.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionController.swift",
       "kind": "FloatLiteral",
       "offset": 6710,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionController.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionController.swift",
       "kind": "BooleanLiteral",
       "offset": 7835,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionController.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionController.swift",
       "kind": "BooleanLiteral",
       "offset": 9029,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionController.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionController.swift",
       "kind": "BooleanLiteral",
       "offset": 9394,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionController.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionController.swift",
       "kind": "BooleanLiteral",
       "offset": 14538,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionController.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionController.swift",
       "kind": "BooleanLiteral",
       "offset": 14573,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionController.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionController.swift",
       "kind": "BooleanLiteral",
       "offset": 16408,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionController.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionController.swift",
       "kind": "BooleanLiteral",
       "offset": 28190,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionController.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/CollectionController\/CollectionController.swift",
       "kind": "BooleanLiteral",
       "offset": 28224,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/TableController\/TableController.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/TableController\/TableController.swift",
       "kind": "Array",
       "offset": 1264,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/TableController\/TableController.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/TableController\/TableController.swift",
       "kind": "BooleanLiteral",
       "offset": 1302,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/TableController\/TableController.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/TableController\/TableController.swift",
       "kind": "BooleanLiteral",
       "offset": 1471,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/TableController\/TableController.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/TableController\/TableController.swift",
       "kind": "BooleanLiteral",
       "offset": 2016,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/TableController\/TableController.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/TableController\/TableController.swift",
       "kind": "StringLiteral",
       "offset": 778,
       "length": 15,
       "value": "\"InuitUI.TableController\""
     },
     {
-      "filePath": "\/Users\/inovamacpro\/jenkins\/apple-i386-4\/workspace\/Internal\/Inuit\/iOS\/Inuit-Swift-iOS\/InuitUI\/InuitUI\/Library\/Classes\/ImageViewManager\/ImageViewDownloader.swift",
+      "filePath": "\/Users\/sasos\/Documents\/Workspace\/git\/Inuit-iOS\/InuitUI\/InuitUI\/Library\/Classes\/ImageViewManager\/ImageViewDownloader.swift",
       "kind": "BooleanLiteral",
       "offset": 1044,
       "length": 5,
