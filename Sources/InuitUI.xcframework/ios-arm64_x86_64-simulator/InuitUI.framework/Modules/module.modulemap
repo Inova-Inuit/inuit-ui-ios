@@ -1,7 +1,7 @@
 framework module InuitUI {
   umbrella header "InuitUI.h"
-
   export *
+
   module * { export * }
 }
 
