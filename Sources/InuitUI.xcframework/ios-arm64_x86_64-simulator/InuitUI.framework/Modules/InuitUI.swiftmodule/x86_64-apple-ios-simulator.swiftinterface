@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
-// swift-module-flags: -target x86_64-apple-ios9.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-experimental-feature OpaqueTypeErasure -enable-bare-slash-regex -module-name InuitUI
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.3.1 effective-5.10 (swiftlang-6.3.1.1.2 clang-2100.0.123.102)
+// swift-module-flags: -target x86_64-apple-ios9.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -Onone -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name InuitUI
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.1
 import Foundation
 import ImageIO
 import InuitCore
@@ -131,7 +131,7 @@ extension InuitUI.ImageViewTransition {
   public class func reveal(_ direction: InuitUI.MovingImageViewTransition.Direction) -> InuitUI.ImageViewManager.Transition
 }
 public protocol ImageViewManaging : AnyObject {
-  typealias ImageData = (image: UIKit.UIImage?, processor: ((UIKit.UIImage) -> UIKit.UIImage))
+  typealias ImageData = (image: UIKit.UIImage?, processor: (UIKit.UIImage) -> UIKit.UIImage)
   var imageView: UIKit.UIImageView? { get set }
   var loadedData: Self.ImageData { get set }
   var errorData: Self.ImageData { get set }

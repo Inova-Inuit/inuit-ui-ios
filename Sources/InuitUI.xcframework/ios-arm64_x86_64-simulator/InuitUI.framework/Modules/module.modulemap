@@ -7,5 +7,4 @@ framework module InuitUI {
 
 module InuitUI.Swift {
   header "InuitUI-Swift.h"
-  requires objc
 }
